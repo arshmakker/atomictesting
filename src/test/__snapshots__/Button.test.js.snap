@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders the Button correctly with no props  1`] = `
+<button
+  className=""
+>
+  Press Me
+</button>
+`;
+
+exports[`Renders the Button correctly with test props 1`] = `
+<button
+  className="sampleClass"
+>
+  Sample Title
+</button>
+`;

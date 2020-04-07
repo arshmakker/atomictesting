@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search component is rendered correctly with no props 1`] = `
+<div
+  className=""
+>
+  <button
+    className=""
+  >
+    Search
+  </button>
+  <input
+    id="searchText"
+    placeholder="Type here to search"
+    type="text"
+  />
+</div>
+`;
+
+exports[`Search component is rendered correctly with test props 1`] = `
+<div
+  className="sampleClass"
+>
+  <button
+    className=""
+  >
+    Sample Title
+  </button>
+  <input
+    id="searchText"
+    placeholder="Sample PlaceHolder"
+    type="text"
+  />
+</div>
+`;
