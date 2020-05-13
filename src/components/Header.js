@@ -1,10 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Search from './Search'
 import LogoBar from './LogoBar'
 import InitialList from './InitialList'
 import ResultsList from './ResultsList'
 
+const InitialData = new Set(["1st Option",
+    "2nd Option",
+    "3rd Option"])
+
 function Header() {
+    const [results,setResults] = useState([])
+
+    const searchTriggered = keyword => {
+        let valuesFound = [];
+        InitialData.forEach(ele => {
+            if (ele.match(keyword)) {
+                valuesFound.push(ele)
+            }
+        })
+        setResults(new Set(valuesFound))
+    }
 
     return (
         <>
@@ -14,7 +29,7 @@ function Header() {
                 background: "lightblue"
             }}>
                 <LogoBar />
-                <Search />
+                <Search onSearchResults={searchTriggered}/>
             </div>
             <div style={{
                 display: "flex", margin: "20px",
@@ -24,19 +39,13 @@ function Header() {
                     padding: "20px",
                     background: "lightgrey"
                 }}>
-                    <InitialList style={{
-                        background: "grey"
-                    }} />
+                    <InitialList list={InitialData} />
                 </div>
                 <div style={{
                     padding: "20px",
                     background: "lightgreen"
                 }}>
-                    <ResultsList style={{
-                        display: "flex", margin: "20px",
-                        justifyContent: "space-around",
-                        background: "lightblue"
-                    }} />
+                    <ResultsList list={results}/>
                 </div>
             </div>
         </>
