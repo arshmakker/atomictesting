@@ -10,8 +10,8 @@ it("Renders the Header correctly with no props ", () => {
         .toJSON();
     expect(tree).toMatchSnapshot();
 })
-it("Renders the Header correctly with test props", () => {
 
+it("Renders the Header correctly with test props", () => {
     const tree = renderer
         .create(<Header classHeader={classHeader}
              ></Header>)
