@@ -3,6 +3,7 @@
 exports[`Renders the Button correctly with no props  1`] = `
 <button
   className=""
+  onClick={[Function]}
 >
   Press Me
 </button>
@@ -11,6 +12,7 @@ exports[`Renders the Button correctly with no props  1`] = `
 exports[`Renders the Button correctly with test props 1`] = `
 <button
   className="sampleClass"
+  onClick={[Function]}
 >
   Sample Title
 </button>

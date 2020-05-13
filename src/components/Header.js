@@ -4,12 +4,11 @@ import LogoBar from './LogoBar'
 import InitialList from './InitialList'
 import ResultsList from './ResultsList'
 
-const InitialData = new Set(["1st Option",
-    "2nd Option",
-    "3rd Option"])
 
-function Header() {
-    const [results,setResults] = useState([])
+function Header({ InitialData = new Set(["1st Option",
+    "2nd Option",
+    "3rd Option"]) }) {
+    const [results, setResults] = useState([])
 
     const searchTriggered = keyword => {
         let valuesFound = [];
@@ -29,7 +28,7 @@ function Header() {
                 background: "lightblue"
             }}>
                 <LogoBar />
-                <Search onSearchResults={searchTriggered}/>
+                <Search onSearchResults={searchTriggered} />
             </div>
             <div style={{
                 display: "flex", margin: "20px",
@@ -45,7 +44,7 @@ function Header() {
                     padding: "20px",
                     background: "lightgreen"
                 }}>
-                    <ResultsList list={results}/>
+                    <ResultsList list={results} />
                 </div>
             </div>
         </>

@@ -1,73 +1,159 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Renders the Header correctly with no props  1`] = `
-<div
-  style={
-    Object {
-      "background": "lightblue",
-      "display": "flex",
-      "justifyContent": "space-around",
-      "margin": "20px",
-    }
-  }
->
-  <div>
-    Ma Web
-  </div>
-  <img
-    alt="unapologetic logo"
-    className=""
-    src="https://img.icons8.com/ios/50/000000/pick-up.png"
-  />
+Array [
   <div
-    className=""
+    style={
+      Object {
+        "background": "lightblue",
+        "display": "flex",
+        "justifyContent": "space-around",
+        "margin": "20px",
+      }
+    }
   >
-    <button
+    <div>
+      Ma Web
+    </div>
+    <img
+      alt="unapologetic logo"
+      className=""
+      src="https://img.icons8.com/ios/50/000000/pick-up.png"
+    />
+    <div
       className=""
     >
-      Search
-    </button>
-    <input
-      id="searchText"
-      placeholder="Type here to search"
-      type="text"
-    />
-  </div>
-</div>
+      <input
+        id="searchText"
+        placeholder="Type here to search"
+        type="text"
+      />
+      <button
+        className=""
+        onClick={[Function]}
+      >
+        Search
+      </button>
+    </div>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "justifyContent": "space-around",
+        "margin": "20px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "background": "lightgrey",
+          "padding": "20px",
+        }
+      }
+    >
+      <ul>
+        <li>
+          1st Option
+        </li>
+        <li>
+          2nd Option
+        </li>
+        <li>
+          3rd Option
+        </li>
+      </ul>
+    </div>
+    <div
+      style={
+        Object {
+          "background": "lightgreen",
+          "padding": "20px",
+        }
+      }
+    >
+      <ul />
+    </div>
+  </div>,
+]
 `;
 
 exports[`Renders the Header correctly with test props 1`] = `
-<div
-  style={
-    Object {
-      "background": "lightblue",
-      "display": "flex",
-      "justifyContent": "space-around",
-      "margin": "20px",
-    }
-  }
->
-  <div>
-    Ma Web
-  </div>
-  <img
-    alt="unapologetic logo"
-    className=""
-    src="https://img.icons8.com/ios/50/000000/pick-up.png"
-  />
+Array [
   <div
-    className=""
+    style={
+      Object {
+        "background": "lightblue",
+        "display": "flex",
+        "justifyContent": "space-around",
+        "margin": "20px",
+      }
+    }
   >
-    <button
+    <div>
+      Ma Web
+    </div>
+    <img
+      alt="unapologetic logo"
+      className=""
+      src="https://img.icons8.com/ios/50/000000/pick-up.png"
+    />
+    <div
       className=""
     >
-      Search
-    </button>
-    <input
-      id="searchText"
-      placeholder="Type here to search"
-      type="text"
-    />
-  </div>
-</div>
+      <input
+        id="searchText"
+        placeholder="Type here to search"
+        type="text"
+      />
+      <button
+        className=""
+        onClick={[Function]}
+      >
+        Search
+      </button>
+    </div>
+  </div>,
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "justifyContent": "space-around",
+        "margin": "20px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "background": "lightgrey",
+          "padding": "20px",
+        }
+      }
+    >
+      <ul>
+        <li>
+          1st Sample
+        </li>
+        <li>
+          2nd Sample
+        </li>
+        <li>
+          3rd Sample
+        </li>
+      </ul>
+    </div>
+    <div
+      style={
+        Object {
+          "background": "lightgreen",
+          "padding": "20px",
+        }
+      }
+    >
+      <ul />
+    </div>
+  </div>,
+]
 `;
