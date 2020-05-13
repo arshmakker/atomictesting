@@ -20,7 +20,8 @@ it('Search component is rendered correctly with test props',()=>{
     const tree = renderer
     .create(<Search classSearch={classSearch}
         searchPlaceholder={searchPlaceholder}
-        title={title} ></Search>)
+        title={title}
+        onSearch={onSearch} ></Search>)
     .toJSON();
 expect(tree).toMatchSnapshot();
 })
