@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders the Logo Bar correctly with no props  1`] = `
+Array [
+  <div>
+    Ma Web
+  </div>,
+  <img
+    alt="unapologetic logo"
+    className=""
+    src="https://img.icons8.com/ios/50/000000/pick-up.png"
+  />,
+]
+`;
+
+exports[`Renders the Logo Bar correctly with test props 1`] = `
+Array [
+  <div>
+    This is my turf
+  </div>,
+  <img
+    alt="unapologetic logo"
+    className=""
+    src="https://img.icons8.com/ios/50/000000/pick-up.png"
+  />,
+]
+`;

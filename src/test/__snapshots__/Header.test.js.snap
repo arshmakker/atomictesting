@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders the Header correctly with no props  1`] = `
+<div
+  style={
+    Object {
+      "background": "lightblue",
+      "display": "flex",
+      "justifyContent": "space-around",
+      "margin": "20px",
+    }
+  }
+>
+  <div>
+    Ma Web
+  </div>
+  <img
+    alt="unapologetic logo"
+    className=""
+    src="https://img.icons8.com/ios/50/000000/pick-up.png"
+  />
+  <div
+    className=""
+  >
+    <button
+      className=""
+    >
+      Search
+    </button>
+    <input
+      id="searchText"
+      placeholder="Type here to search"
+      type="text"
+    />
+  </div>
+</div>
+`;
+
+exports[`Renders the Header correctly with test props 1`] = `
+<div
+  style={
+    Object {
+      "background": "lightblue",
+      "display": "flex",
+      "justifyContent": "space-around",
+      "margin": "20px",
+    }
+  }
+>
+  <div>
+    Ma Web
+  </div>
+  <img
+    alt="unapologetic logo"
+    className=""
+    src="https://img.icons8.com/ios/50/000000/pick-up.png"
+  />
+  <div
+    className=""
+  >
+    <button
+      className=""
+    >
+      Search
+    </button>
+    <input
+      id="searchText"
+      placeholder="Type here to search"
+      type="text"
+    />
+  </div>
+</div>
+`;
