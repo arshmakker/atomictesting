@@ -5,6 +5,7 @@ exports[`Search component is rendered correctly with no props 1`] = `
   className=""
 >
   <input
+    data-testid="searchText"
     id="searchText"
     placeholder="Type here to search"
     type="text"
@@ -23,6 +24,7 @@ exports[`Search component is rendered correctly with test props 1`] = `
   className="sampleClass"
 >
   <input
+    data-testid="searchText"
     id="searchText"
     placeholder="Sample PlaceHolder"
     type="text"

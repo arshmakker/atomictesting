@@ -5,7 +5,7 @@ function Search({
   classSearch = "",
   title = "Search",
   searchPlaceholder = "Type here to search",
-  onSearchResults = (param) => { console.log(param) }
+  onSearchResults=()=>{}
 }) {
   function onSearch() {
     const searchKeyword = document.getElementById("searchText").value
@@ -13,8 +13,9 @@ function Search({
   }
   return (
     <div className={classSearch} >
-      <input type="text" id="searchText" placeholder={searchPlaceholder} />
-      <Button title={title} onButtonPress={onSearch}></Button>
+      <input type="text" data-testid="searchText" id="searchText" placeholder={searchPlaceholder} />
+      <Button  title={title} onButtonPress={onSearch}
+      ></Button>
     </div>
   )
 }

@@ -3,10 +3,12 @@ import React from 'react'
 function Button({
     classButton = "",
     title = "Press Me",
-    onButtonPress = () => { console.log('Button Pressed') }
+    onButtonPress = null
 }) {
     return (
-        <button className={classButton} onClick={onButtonPress}>{title}</button>
+        <button 
+            className={classButton}
+            onClick={onButtonPress}>{title}</button>
     )
 }
 

@@ -26,6 +26,7 @@ exports[`Renders Header component 1`] = `
       className=""
     >
       <input
+        data-testid="searchText"
         id="searchText"
         placeholder="Type here to search"
         type="text"

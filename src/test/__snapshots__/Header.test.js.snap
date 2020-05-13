@@ -24,6 +24,7 @@ Array [
       className=""
     >
       <input
+        data-testid="searchText"
         id="searchText"
         placeholder="Type here to search"
         type="text"
@@ -103,6 +104,7 @@ Array [
       className=""
     >
       <input
+        data-testid="searchText"
         id="searchText"
         placeholder="Type here to search"
         type="text"
