@@ -1,23 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Button from './Button';
 
 function Search({
   classSearch = "",
   title = "Search",
   searchPlaceholder = "Type here to search",
-  onSearchResults=()=>{}
+  onSearchResults = () => {}
 }) {
+  const [searchValue, setSearchValue] = useState('');
+
   function onSearch() {
-    const searchKeyword = document.getElementById("searchText").value
-    onSearchResults(searchKeyword)
+    onSearchResults(searchValue);
   }
+
+  function handleInputChange(event) {
+    setSearchValue(event.target.value);
+  }
+
   return (
-    <div className={classSearch} >
-      <input type="text" data-testid="searchText" id="searchText" placeholder={searchPlaceholder} />
-      <Button  title={title} onButtonPress={onSearch}
-      ></Button>
+    <div className={classSearch}>
+      <input 
+        type="text" 
+        data-testid="searchText" 
+        id="searchText" 
+        placeholder={searchPlaceholder}
+        value={searchValue}
+        onChange={handleInputChange}
+      />
+      <Button title={title} onButtonPress={onSearch} />
     </div>
-  )
+  );
 }
 
 export default Search;

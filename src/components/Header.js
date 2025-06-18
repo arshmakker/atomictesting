@@ -4,20 +4,27 @@ import LogoBar from './LogoBar'
 import InitialList from './InitialList'
 import ResultsList from './ResultsList'
 
-
-function Header({ InitialData = new Set(["1st Option",
-    "2nd Option",
-    "3rd Option"]) }) {
-    const [results, setResults] = useState([])
+function Header({ InitialData = new Set(["1st Option", "2nd Option", "3rd Option"]) }) {
+    const [results, setResults] = useState(new Set())
 
     const searchTriggered = keyword => {
-        let valuesFound = [];
+        // Handle empty or invalid search terms
+        if (!keyword || typeof keyword !== 'string' || keyword.trim() === '') {
+            setResults(new Set());
+            return;
+        }
+
+        const valuesFound = [];
         InitialData.forEach(ele => {
-            if (ele.match(keyword)) {
-                valuesFound.push(ele)
+            try {
+                if (ele && ele.toString().toLowerCase().includes(keyword.toLowerCase())) {
+                    valuesFound.push(ele);
+                }
+            } catch (error) {
+                console.warn('Error processing search item:', ele, error);
             }
-        })
-        setResults(new Set(valuesFound))
+        });
+        setResults(new Set(valuesFound));
     }
 
     return (
